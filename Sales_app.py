@@ -3,13 +3,13 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler
 
-st.image("New ads sales\IMG20230902154929.jpg") # TODO check this
+st.image("IMG20230902154929.jpg") # TODO check this
 # Load the model from a file
-model_path = "D:/visual/New ads sales/model.pkl"
+model_path = "model.pkl"
 with open(model_path, "rb") as model_file:
     model = pickle.load(model_file)
 
-scaler_path = "D:/visual/New ads sales/scalers.pkl"
+scaler_path = "scalers.pkl"
 with open(scaler_path, "rb") as model_file:
     model_scaler = pickle.load(model_file)
 # Load the trained model and scaler files
